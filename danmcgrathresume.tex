@@ -1,63 +1,107 @@
-\documentclass[line,margin]{res}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Daniel McGrath} % Your name
+\address{3136 Colony Lane \\ Plymouth Meeting, PA 19462} % Your address
+\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(484)~$\cdot$~866~$\cdot$~6792 \\ djm@pitt.edu} % Your phone number and email
+
 \begin{document}
-\name{Daniel McGrath}
-\address{3136 Colony Lane \\ Plymouth Meeting, PA 19462 \\ (484) 866-6792 \\ djm158@pitt.edu}
 
-\begin{resume}
-    \section{OBJECTIVE}
-    To obtain a challenging summer internship. Available May 2017.
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-    \section{EDUCATION}
-    University of Pittsburgh \\
-    Bachelors of Science in Computer Engineering \\
-    Expected Graduation Date: December 2017 \\
-    GPA: 3.8
+\begin{rSection}{Education}
 
-    \section{RELEVANT COURSEWORK}
-    \begin{itemize}
-        \item Operating Systems
-        \item Embedded System Design
-        \item Computer Architecture
-        \item Computer Modeling and Simulation
-        \item Algorithms
-        \item Data Structures
-        \item Intro to Systems Software
-    \end{itemize}
+{\bf University of Pittsburgh} \hfill {\em December 2017} \\ 
+B.S. in Computer Engineering \\
+\smallskip \\
+Member of Theta Tau \\
+Overall GPA: 3.8
 
-    \section{WORK EXPERIENCE}
-    \textbf{Embedded Systems Co-Op}, \textit{ZOLL LifeVest}, Pittsburgh PA  \hfill 2015-2016 \\
-    \begin{itemize}
-        \item Developed C/C++ applications in an Agile development team
-        \item Implemented continuous integration system using Jenkins and Docker
-        \item Tested and fixed bugs in an embedded Linux environment
-    \end{itemize}
+\end{rSection}
 
-    \textbf{Advanced Technologies Co-Op}, \textit{Diebold}, Canton OH \hfill January - May 2015 \\
-    \begin{itemize}
-        \item Developed C\# wrapper for web based facial recognition API
-        \item Developed facial recognition software using OpenCV
-        \item Developed and tested .NET applications in an Agile environment
-    \end{itemize}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-    \section{TECHNICAL SKILLS}
-    \begin{itemize}
-        \item C/C++
-        \item Python
-        \item Java
-        \item Linux
-        \item Jenkins
-        \item Docker
-    \end{itemize}
+\begin{rSection}{Experience}
 
+\begin{rSubsection}{The Bank Of New York Mellon}{June 2017 - August 2017}{Summer Analyst}{Pittsburgh, PA}
+\item Developed UI components for monitoring tools using AngularJS
+\item Developed visualizations for monitoring tools using Google charts and AngularJS
+\item Developed internal APIs using NodeJS and Express 
+\item Participated in an internal intern hackathon where our team developed a summarization tool for internal social network using NodeJS, Express, and AngularJS
+\end{rSubsection}
 
-    \section{ACTIVITIES}
-    Brother of Theta Tau Nu Delta Chapter \hfill April 2016 - Present \\
-    Pitt Club Cross Country \hfill August 2013 - Present
+%------------------------------------------------
 
-    \section{HONORS}
-    University of Pittsburgh Academic Scholarship Recipient \\
-    National Merit Scholarship Recipient
+\begin{rSubsection}{Zoll LifeVest}{Aug 2015 - Dec 2015, May 2016 - Aug 2016}{Embedded Systems Co-op}{Pittsburgh, PA}
+\item Developed C/C++ applications in an Agile development team
+\item Implemented continuous integration system using Jenkins and Docker
+\item Automated testing for embedded Linux applications
+\item Worked in an Agile/Scrum environment to discover, test, and fix bugs
+\end{rSubsection}
 
+%------------------------------------------------
 
-\end{resume}
+\begin{rSubsection}{Diebold Nixdorf}{Jan 2015 - May 2015}{Advanced Technologies Co-Op}{North Canton, OH}
+\item Developed open source C\# wrapper for web based facial recognition API
+\item Developed facial recognition software using OpenCV
+\item Developed and tested .NET applications in an Agile environment
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Java, C/C++, Python, JavaScript, HTML, CSS/SASS \\
+Protocols \& APIs & XML, JSON, REST \\
+Databases & MySQL, MongoDB \\
+Tools & Git, Jenkins
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
 \end{document}
