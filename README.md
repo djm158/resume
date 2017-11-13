@@ -1,3 +1,3 @@
 # LaTeX resume
 
-## xelatex danmcgrathresume.tex
+```xelatex danmcgrathresume.tex```
