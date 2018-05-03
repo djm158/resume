@@ -14,6 +14,7 @@ $ git clone https://github.com/djm158/resume
 ### Linux
 
 ```sh
+$ sudo apt-get install texlive
 $ xelatex danmcgrathresume.tex
 ```
 
@@ -27,3 +28,11 @@ $ xelatex danmcgrathresume.tex
 3. Set to XeLaTeX mode 
 
   ![MiKTeX texworks xelatex screenshot](https://github.com/djm158/resume/blob/master/images/miktex_xelatex.png)
+
+### Mac
+
+I assume [Homebrew](https://brew.sh/) can install a LaTeX distribution like tex live. Sorry, not a mac person :blush:
+
+#### note
+
+I'm not sure why I use tex live on linux and MiKTeX on Windows. Truth be told, at the time of writing this document, I mainly live in Windows and use WSL for my linuxy needs.
