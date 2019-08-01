@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/djm158/resume.svg?branch=master)](https://travis-ci.com/djm158/resume)
 # LaTeX resume
 
 template from [LaTeX Templates](http://www.latextemplates.com/template/medium-length-professional-cv)
