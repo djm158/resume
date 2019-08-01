@@ -6,34 +6,10 @@ original author: [Trey Hunner](http://treyhunner.com/)
 
 ## Build
 
+Travis builds my resume via [tectonic](https://tectonic-typesetting.github.io/en-US/) in a docker container described in detail [here](https://github.com/PHPirates/travis-ci-latex-pdf#1-docker-image-with-tectonic)
+
 You can clone this repository and use my resume as a template. If you choose not to clone this repository and instead use the original from latextemplates.com, it is important the file `resume.cls` is in the same directory as your `.tex` file.
 
 ```sh
 $ git clone https://github.com/djm158/resume
 ```
-
-### Linux
-
-```sh
-$ sudo apt-get install texlive
-$ xelatex danmcgrathresume.tex
-```
-
-### Windows
-
-1. Install [MiKTeX](https://miktex.org/)
-2. Open TeXworks front end
-
-  ![MiKTex console screenshot](https://github.com/djm158/resume/blob/master/images/miktex_texworks.png)
-
-3. Set to XeLaTeX mode 
-
-  ![MiKTeX texworks xelatex screenshot](https://github.com/djm158/resume/blob/master/images/miktex_xelatex.png)
-
-### Mac
-
-I assume [Homebrew](https://brew.sh/) can install a LaTeX distribution like tex live. Sorry, not a mac person :blush:
-
-#### note
-
-I'm not sure why I use tex live on linux and MiKTeX on Windows. Truth be told, at the time of writing this document, I mainly live in Windows and use WSL for my linuxy needs.
