@@ -6,4 +6,4 @@ before_install:
  - openssl aes-256-cbc -K $encrypted_daa0a7656602_key -iv $encrypted_daa0a7656602_iv -in dropbox_uploader.sh.enc -out ./dropbox_uploader.sh -d
 script:
   - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic danmcgrathresume.tex"
-  - ./dropbox-uploader danmcgrathresume.pdf danmcgrathresume.pdf
+  - ./dropbox-uploader.sh upload danmcgrathresume.pdf danmcgrathresume.pdf
